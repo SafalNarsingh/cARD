@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="football" size="1.000000 1.449761" />
+    <ImageTarget name="Forest" size="1.000000 1.449761" />
+  </Tracking>
+</QCARConfig>
