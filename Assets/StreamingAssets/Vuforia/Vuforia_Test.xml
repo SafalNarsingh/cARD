@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="objects-16" size="1.000000 1.449761" />
+    <ImageTarget name="objects-12" size="1.000000 1.456731" />
+    <ImageTarget name="objects-14" size="1.000000 1.449761" />
+    <ImageTarget name="objects-1" size="1.000000 1.449761" />
+    <ImageTarget name="objects-3" size="1.000000 1.449761" />
+    <ImageTarget name="objects-9" size="1.000000 1.449761" />
+    <ImageTarget name="objects-10" size="1.000000 1.449761" />
+    <ImageTarget name="objects-11" size="1.000000 1.449761" />
+    <ImageTarget name="location-3" size="1.000000 1.449761" />
+    <ImageTarget name="location-6" size="1.000000 1.449761" />
+    <ImageTarget name="location-9" size="1.000000 1.449761" />
+    <ImageTarget name="location-15" size="1.000000 1.449761" />
+    <ImageTarget name="location-2" size="1.000000 1.449761" />
+    <ImageTarget name="location-14" size="1.000000 1.449761" />
+    <ImageTarget name="location-13" size="1.000000 1.456731" />
+    <ImageTarget name="location-12" size="1.000000 1.449761" />
+    <ImageTarget name="location-11" size="1.000000 1.449761" />
+    <ImageTarget name="location-10" size="1.000000 1.449761" />
+    <ImageTarget name="location-8" size="1.000000 1.449761" />
+    <ImageTarget name="location-7" size="1.000000 1.456731" />
+    <ImageTarget name="location-5" size="1.000000 1.449761" />
+    <ImageTarget name="location-4" size="1.000000 1.449761" />
+    <ImageTarget name="location-1" size="1.000000 1.449761" />
+    <ImageTarget name="location" size="1.000000 1.456731" />
+    <ImageTarget name="objects-17" size="1.000000 1.449761" />
+    <ImageTarget name="objects-15" size="1.000000 1.449761" />
+    <ImageTarget name="objects-13" size="1.000000 1.449761" />
+    <ImageTarget name="objects-8" size="1.000000 1.449761" />
+    <ImageTarget name="objects-7" size="1.000000 1.456731" />
+    <ImageTarget name="objects-6" size="1.000000 1.449761" />
+    <ImageTarget name="objects-5" size="1.000000 1.449761" />
+    <ImageTarget name="objects-4" size="1.000000 1.449761" />
+    <ImageTarget name="objects-2" size="1.000000 1.449761" />
+    <ImageTarget name="objects" size="1.000000 1.456731" />
+    <ImageTarget name="activites-1" size="1.000000 1.449761" />
+    <ImageTarget name="activites-10" size="1.000000 1.449761" />
+    <ImageTarget name="activites-7" size="1.000000 1.456731" />
+    <ImageTarget name="activites-12" size="1.000000 1.456731" />
+    <ImageTarget name="activites-11" size="1.000000 1.449761" />
+    <ImageTarget name="activites-9" size="1.000000 1.449761" />
+    <ImageTarget name="activites-8" size="1.000000 1.449761" />
+    <ImageTarget name="activites-6" size="1.000000 1.449761" />
+    <ImageTarget name="activites-4" size="1.000000 1.449761" />
+    <ImageTarget name="activites-5" size="1.000000 1.449761" />
+    <ImageTarget name="activites-3" size="1.000000 1.449761" />
+    <ImageTarget name="activites-2" size="1.000000 1.449761" />
+    <ImageTarget name="activites" size="1.000000 1.456731" />
+  </Tracking>
+</QCARConfig>
