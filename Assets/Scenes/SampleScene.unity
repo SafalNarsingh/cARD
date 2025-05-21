@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 22028823}
   - component: {fileID: 22028822}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 45836197}
   - component: {fileID: 45836196}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,7 +833,7 @@ Transform:
   m_GameObject: {fileID: 74639544}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0, z: 3.1}
+  m_LocalPosition: {x: 0.56, y: 0, z: 4.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 156437255}
   - component: {fileID: 156437258}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 188864990}
   - component: {fileID: 188864989}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Spoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2424,7 +2424,7 @@ GameObject:
   - component: {fileID: 918535260}
   - component: {fileID: 918535259}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Bike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2640,7 +2640,7 @@ GameObject:
   - component: {fileID: 980741084}
   - component: {fileID: 980741083}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2888,7 +2888,7 @@ GameObject:
   - component: {fileID: 1105997262}
   - component: {fileID: 1105997261}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Pencil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3756,7 +3756,7 @@ GameObject:
   - component: {fileID: 1204893006}
   - component: {fileID: 1204893005}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Toothbrush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 1266512781}
   - component: {fileID: 1266512780}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Soap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4004,7 +4004,7 @@ GameObject:
   - component: {fileID: 1377708393}
   - component: {fileID: 1377708392}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Momo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4500,7 +4500,7 @@ GameObject:
   - component: {fileID: 1482258196}
   - component: {fileID: 1482258195}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Chau Chau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4996,7 +4996,7 @@ GameObject:
   - component: {fileID: 1630402402}
   - component: {fileID: 1630402401}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5120,7 +5120,7 @@ GameObject:
   - component: {fileID: 1688692131}
   - component: {fileID: 1688692130}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5368,7 +5368,7 @@ GameObject:
   - component: {fileID: 1744034322}
   - component: {fileID: 1744034321}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Elephant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5616,7 +5616,7 @@ GameObject:
   - component: {fileID: 1776963236}
   - component: {fileID: 1776963235}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Tiger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5864,7 +5864,7 @@ GameObject:
   - component: {fileID: 1910687165}
   - component: {fileID: 1910687164}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Umbrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5988,7 +5988,7 @@ GameObject:
   - component: {fileID: 2022354091}
   - component: {fileID: 2022354090}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6360,7 +6360,7 @@ GameObject:
   - component: {fileID: 2127021940}
   - component: {fileID: 2127021939}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
