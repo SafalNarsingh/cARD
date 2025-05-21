@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 53989234}
   - component: {fileID: 53989233}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Sleeping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 830706617}
   - component: {fileID: 830706616}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Teaching
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3012,7 +3012,7 @@ GameObject:
   - component: {fileID: 1140598147}
   - component: {fileID: 1140598146}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Riding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3384,7 +3384,7 @@ GameObject:
   - component: {fileID: 1176619179}
   - component: {fileID: 1176619178}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Eating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3632,7 +3632,7 @@ GameObject:
   - component: {fileID: 1200387060}
   - component: {fileID: 1200387059}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Bathing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4128,7 +4128,7 @@ GameObject:
   - component: {fileID: 1452820627}
   - component: {fileID: 1452820626}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Brushing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4252,7 +4252,7 @@ GameObject:
   - component: {fileID: 1467539353}
   - component: {fileID: 1467539352}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Watching
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4376,7 +4376,7 @@ GameObject:
   - component: {fileID: 1471424938}
   - component: {fileID: 1471424937}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Playing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4872,7 +4872,7 @@ GameObject:
   - component: {fileID: 1627986621}
   - component: {fileID: 1627986620}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Writing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5244,7 +5244,7 @@ GameObject:
   - component: {fileID: 1702791934}
   - component: {fileID: 1702791933}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Raining
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5492,7 +5492,7 @@ GameObject:
   - component: {fileID: 1746341181}
   - component: {fileID: 1746341180}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Watering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5740,7 +5740,7 @@ GameObject:
   - component: {fileID: 1787379364}
   - component: {fileID: 1787379363}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Travelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6112,7 +6112,7 @@ GameObject:
   - component: {fileID: 2041538985}
   - component: {fileID: 2041538984}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Studying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
