@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 35559767}
   - component: {fileID: 35559766}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: School
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 74071489}
   - component: {fileID: 74071488}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Zoo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 104713895}
   - component: {fileID: 104713894}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 142243748}
   - component: {fileID: 142243747}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Restaurant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 229378739}
   - component: {fileID: 229378738}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 285543581}
   - component: {fileID: 285543580}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 351257913}
   - component: {fileID: 351257912}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Clasroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2052,7 +2052,7 @@ GameObject:
   - component: {fileID: 795179094}
   - component: {fileID: 795179093}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Hospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2176,7 +2176,7 @@ GameObject:
   - component: {fileID: 815753663}
   - component: {fileID: 815753662}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2764,7 +2764,7 @@ GameObject:
   - component: {fileID: 1068290715}
   - component: {fileID: 1068290714}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Farm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3136,7 +3136,7 @@ GameObject:
   - component: {fileID: 1146574028}
   - component: {fileID: 1146574027}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3260,7 +3260,7 @@ GameObject:
   - component: {fileID: 1170857727}
   - component: {fileID: 1170857726}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,7 +3508,7 @@ GameObject:
   - component: {fileID: 1179632211}
   - component: {fileID: 1179632210}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4624,7 +4624,7 @@ GameObject:
   - component: {fileID: 1561005208}
   - component: {fileID: 1561005207}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4748,7 +4748,7 @@ GameObject:
   - component: {fileID: 1601607152}
   - component: {fileID: 1601607151}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Playground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6236,7 +6236,7 @@ GameObject:
   - component: {fileID: 2081520390}
   - component: {fileID: 2081520389}
   m_Layer: 0
-  m_Name: ImageTarget
+  m_Name: Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
