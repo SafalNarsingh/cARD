@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 339a784c52c164b788cb53fcd2dd83ba
+guid: 00913811205ae4f65b64da9458b1c73c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ruchka
-    second: {fileID: 2100000, guid: a0b67a11d8df8449dbde95705532d222, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
