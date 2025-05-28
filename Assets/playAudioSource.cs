@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem; // Import new input system namespace
 
 public class ARTouchInteraction : MonoBehaviour
 {
@@ -11,47 +12,41 @@ public class ARTouchInteraction : MonoBehaviour
 
     void Start()
     {
-        // Get AudioSource component if not assigned
+        // Get or add AudioSource component
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
 
-        // Add AudioSource if it doesn't exist
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
     {
-        HandleTouch();
+        HandleTouchOrClick();
     }
 
-    void HandleTouch()
+    void HandleTouchOrClick()
     {
-        // Handle touch input (mobile)
-        if (Input.touchCount > 0)
+        // Handle touchscreen input
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
-            Touch touch = Input.GetTouch(0);
-
-            if (touch.phase == TouchPhase.Began)
-            {
-                CheckTouchHit(touch.position);
-            }
+            Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
+            CheckTouchHit(touchPos);
         }
 
-        // Handle mouse input (for testing in editor)
-        if (Input.GetMouseButtonDown(0))
+        // Handle mouse input for editor or desktop
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            CheckTouchHit(Input.mousePosition);
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            CheckTouchHit(mousePos);
         }
     }
 
     void CheckTouchHit(Vector2 screenPosition)
     {
-        // Create a ray from camera through the touch point
         Ray ray = Camera.main.ScreenPointToRay(screenPosition);
         RaycastHit hit;
 
-        // Check if ray hits this object
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, touchLayer))
         {
             if (hit.collider.gameObject == gameObject)
@@ -74,6 +69,5 @@ public class ARTouchInteraction : MonoBehaviour
     protected virtual void OnObjectTouched()
     {
         Debug.Log("AR Object was touched!");
-        // Add any additional touch behavior here
     }
 }
