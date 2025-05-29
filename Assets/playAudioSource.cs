@@ -1,73 +1,65 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Import new input system namespace
+using UnityEngine.InputSystem; // for the new input system
 
-public class ARTouchInteraction : MonoBehaviour
+public class ObjectClickSound : MonoBehaviour
 {
-    [Header("Audio Settings")]
-    public AudioSource audioSource;
-    public AudioClip soundClip;
-
-    [Header("Touch Settings")]
-    public LayerMask touchLayer = -1;
+    public AudioClip audioClip; // Assign your honk sound
+    private AudioSource audioSource;
+    private Camera mainCamera;
 
     void Start()
     {
-        // Get or add AudioSource component
-        if (audioSource == null)
-            audioSource = GetComponent<AudioSource>();
+        mainCamera = Camera.main;
 
+        // Get or add AudioSource
+        audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
+        {
             audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+        }
     }
 
     void Update()
     {
-        HandleTouchOrClick();
-    }
-
-    void HandleTouchOrClick()
-    {
-        // Handle touchscreen input
+        // Touchscreen input
         if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
             Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
-            CheckTouchHit(touchPos);
+            HandleClick(touchPos);
         }
 
-        // Handle mouse input for editor or desktop
+        // Mouse input (editor/testing)
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePos = Mouse.current.position.ReadValue();
-            CheckTouchHit(mousePos);
+            HandleClick(mousePos);
         }
     }
 
-    void CheckTouchHit(Vector2 screenPosition)
+    void HandleClick(Vector2 screenPos)
     {
-        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+        Ray ray = mainCamera.ScreenPointToRay(screenPos);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, touchLayer))
+        if (Physics.Raycast(ray, out hit))
         {
             if (hit.collider.gameObject == gameObject)
             {
-                PlaySound();
-                OnObjectTouched();
+                PlayHonkSound();
             }
         }
     }
 
-    void PlaySound()
+    void PlayHonkSound()
     {
-        if (audioSource != null && soundClip != null)
+        if (audioSource != null && audioClip != null)
         {
-            audioSource.PlayOneShot(soundClip);
+            audioSource.PlayOneShot(audioClip);
         }
-    }
-
-    // Override this method for additional touch behavior
-    protected virtual void OnObjectTouched()
-    {
-        Debug.Log("AR Object was touched!");
     }
 }
