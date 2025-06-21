@@ -12,7 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UI.unity
     guid: 7c5d6c896cc24d74eb7765a5d3634632
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: ee4f9a839db73ef4f80ca412d1f455b4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: 91a37a3fad386194dae441ca6c7c8902, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 7c508802a7786684c8826d424c141160, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b340a0dbae61af6469e1d72d6b6bdc02, type: 2}
   m_UseUCBPForAssetBundles: 0

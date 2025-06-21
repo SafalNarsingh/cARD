@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UIStrings_ne-NP
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ne-NP
+  m_SharedData: {fileID: 11400000, guid: 08b022ea21afe6c4689d278cb62a5a73, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 7726518285010469095
+  m_TableData:
+  - m_Id: 83409649664
+    m_Localized: "\u092D\u093E\u0937\u093E :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 881711529984
+    m_Localized: "\u092D\u093E\u0937\u093E:"
+    m_Metadata:
+      m_Items:
+      - rid: 7726518285010469095
+  references:
+    version: 2
+    RefIds:
+    - rid: 7726518285010469095
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 881711529984
