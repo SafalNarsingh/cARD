@@ -1,16 +1,44 @@
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using System.Collections;
 
 public class LanguageSwitcher : MonoBehaviour
 {
-    public void SetNepali()
+
+    void Start()
     {
-        SetLocaleByCode("ne-NP");
+        // Set default language to Nepali
+        StartCoroutine(SetLocaleAtStart("ne-NP"));
     }
 
-    public void SetEnglish()
+    // Coroutine ensures localization system is initialized before setting locale
+    IEnumerator SetLocaleAtStart(string code)
     {
-        SetLocaleByCode("en"); // or "en-US" if that’s what you used
+        yield return LocalizationSettings.InitializationOperation;
+
+        var locales = LocalizationSettings.AvailableLocales.Locales;
+        foreach (var locale in locales)
+        {
+            if (locale.Identifier.Code == code)
+            {
+                LocalizationSettings.SelectedLocale = locale;
+                Debug.Log("Default Locale set to: " + code);
+                yield break;
+            }
+        }
+
+        Debug.LogWarning("Locale with code '" + code + "' not found at startup.");
+    }
+
+    public void ToggleLanguage()
+    {
+        // Get current locale code
+        string currentCode = LocalizationSettings.SelectedLocale.Identifier.Code;
+
+        // Decide which code to switch to
+        string newCode = currentCode == "ne-NP" ? "en" : "ne-NP";
+
+        SetLocaleByCode(newCode);
     }
 
     private void SetLocaleByCode(string code)
@@ -28,4 +56,6 @@ public class LanguageSwitcher : MonoBehaviour
 
         Debug.LogWarning("Locale with code '" + code + "' not found.");
     }
+
+    
 }
