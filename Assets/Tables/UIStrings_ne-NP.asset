@@ -19,10 +19,6 @@ MonoBehaviour:
     m_Items:
     - rid: 7726518285010469095
   m_TableData:
-  - m_Id: 83409649664
-    m_Localized: "\u092D\u093E\u0937\u093E :"
-    m_Metadata:
-      m_Items: []
   - m_Id: 881711529984
     m_Localized: "\u092D\u093E\u0937\u093E:"
     m_Metadata:

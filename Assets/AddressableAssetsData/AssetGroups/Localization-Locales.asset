@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-Locales
   m_GUID: ea97d7161834c834ba56fac5ec4543e2
   m_SerializeEntries:
+  - m_GUID: 57a238214433e86408812b7ae7240cfb
+    m_Address: English (en)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6489af2b97e9ca443a8f282636c2d6d9
     m_Address: Nepali (Nepal) (ne-NP)
     m_ReadOnly: 1

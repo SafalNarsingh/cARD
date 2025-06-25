@@ -15,14 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: UIStrings
   m_TableCollectionNameGuidString: 08b022ea21afe6c4689d278cb62a5a73
   m_Entries:
-  - m_Id: 83409649664
-    m_Key: 'Language :'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 867836772352
-    m_Key: New Entry
-    m_Metadata:
-      m_Items: []
   - m_Id: 881711529984
     m_Key: 'Language:'
     m_Metadata:

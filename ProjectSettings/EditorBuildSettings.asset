@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CardScanner.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/UI.unity
     guid: 7c5d6c896cc24d74eb7765a5d3634632
+  - enabled: 0
+    path: Assets/Scenes/3D Placer.unity
+    guid: 1a6bfd48a67b5cb44b943e509a00424f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ee4f9a839db73ef4f80ca412d1f455b4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}

@@ -10,27 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-String-Tables-Nepali (Nepal) (ne-NP)
+  m_Name: Localization-String-Tables-English (en)
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-String-Tables-Nepali (Nepal) (ne-NP)
-  m_GUID: 538fcafb11f1bb64c95254006a1697f0
+  m_GroupName: Localization-String-Tables-English (en)
+  m_GUID: 7f872a0da2fd190479e5fdd69e00fbd9
   m_SerializeEntries:
-  - m_GUID: d4babe771cadb20439afb952d838ad41
-    m_Address: UIStrings_ne-NP
+  - m_GUID: 06548264ac2511f4483696a8bcad6bc4
+    m_Address: UILocale_en
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-ne-NP
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fb3accc7c3fc1bc4dadb193ae17ce14e
-    m_Address: UILocale_ne-NP
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ne-NP
+    - Locale-en
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 729f1ee10670b8543a07754d2d2b90f2, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 7f172ca7b3e91124daf6b1e4a7eeb8e3, type: 2}
-    - {fileID: 11400000, guid: 0aca14c9a9a51464899c229558600293, type: 2}
+    - {fileID: 11400000, guid: f709198a6f3a2624ca897305192703d0, type: 2}
+    - {fileID: 11400000, guid: d290f38935e30d1469c032ddd840e675, type: 2}
