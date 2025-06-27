@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="objects-16" size="1.000000 1.449761" />
-    <ImageTarget name="objects-12" size="1.000000 1.456731" />
+    <ImageTarget name="objects-17" size="1.000000 1.449761" />
+    <ImageTarget name="activites-14" size="1.000000 1.449761" />
     <ImageTarget name="objects-14" size="1.000000 1.449761" />
+    <ImageTarget name="objects-6" size="1.000000 1.449761" />
     <ImageTarget name="objects-1" size="1.000000 1.449761" />
+    <ImageTarget name="location-17" size="1.000000 1.454545" />
+    <ImageTarget name="location-16" size="1.000000 1.449761" />
+    <ImageTarget name="activites-17" size="1.000000 1.449761" />
+    <ImageTarget name="activites-16" size="1.000000 1.449761" />
+    <ImageTarget name="activites-15" size="1.000000 1.449761" />
+    <ImageTarget name="activites-13" size="1.000000 1.449761" />
+    <ImageTarget name="objects-16" size="1.000000 1.449761" />
+    <ImageTarget name="objects" size="1.000000 1.456731" />
+    <ImageTarget name="objects-12" size="1.000000 1.456731" />
     <ImageTarget name="objects-3" size="1.000000 1.449761" />
     <ImageTarget name="objects-9" size="1.000000 1.449761" />
     <ImageTarget name="objects-10" size="1.000000 1.449761" />
@@ -25,16 +35,13 @@
     <ImageTarget name="location-4" size="1.000000 1.449761" />
     <ImageTarget name="location-1" size="1.000000 1.449761" />
     <ImageTarget name="location" size="1.000000 1.456731" />
-    <ImageTarget name="objects-17" size="1.000000 1.449761" />
     <ImageTarget name="objects-15" size="1.000000 1.449761" />
     <ImageTarget name="objects-13" size="1.000000 1.449761" />
     <ImageTarget name="objects-8" size="1.000000 1.449761" />
     <ImageTarget name="objects-7" size="1.000000 1.456731" />
-    <ImageTarget name="objects-6" size="1.000000 1.449761" />
     <ImageTarget name="objects-5" size="1.000000 1.449761" />
     <ImageTarget name="objects-4" size="1.000000 1.449761" />
     <ImageTarget name="objects-2" size="1.000000 1.449761" />
-    <ImageTarget name="objects" size="1.000000 1.456731" />
     <ImageTarget name="activites-1" size="1.000000 1.449761" />
     <ImageTarget name="activites-10" size="1.000000 1.449761" />
     <ImageTarget name="activites-7" size="1.000000 1.456731" />
