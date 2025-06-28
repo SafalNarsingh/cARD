@@ -346,9 +346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca705c118866fd418547269baf6af6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicObject: {fileID: 385814729}
   musicSymbolOn: {fileID: 1967533122}
   musicSymbolOff: {fileID: 2103953544}
-  audioClip: {fileID: 8300000, guid: db7d1cdea7081854892c8a37b76ad4ed, type: 3}
 --- !u!82 &385814731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -455,14 +455,14 @@ RectTransform:
   m_GameObject: {fileID: 385814729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.43033147, y: 0.43033147, z: 0.43033147}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1865331236}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 557.70966, y: 929.5161}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &403937054
@@ -2112,7 +2112,6 @@ RectTransform:
   - {fileID: 403937055}
   - {fileID: 1749436338}
   - {fileID: 332520231}
-  - {fileID: 385814732}
   - {fileID: 1967533123}
   - {fileID: 2103953545}
   - {fileID: 18660066}
@@ -2289,7 +2288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1967533123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2354,8 +2353,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 385814730}
-        m_TargetAssemblyTypeName: music, Assembly-CSharp
-        m_MethodName: onClick
+        m_TargetAssemblyTypeName: Music, Assembly-CSharp
+        m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2421,7 +2420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2103953545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2486,8 +2485,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 385814730}
-        m_TargetAssemblyTypeName: music, Assembly-CSharp
-        m_MethodName: onClick
+        m_TargetAssemblyTypeName: Music, Assembly-CSharp
+        m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2539,6 +2538,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 385814732}
   - {fileID: 1865331236}
   - {fileID: 1618021793}
   - {fileID: 1586355648}

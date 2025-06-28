@@ -13,7 +13,7 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadScene(arSceneName, LoadSceneMode.Additive);
 
         // Unload UI Scene after AR Scene is loaded
-        StartCoroutine(UnloadSceneAfterDelay(uiSceneName, 0.1f));
+        //StartCoroutine(UnloadSceneAfterDelay(uiSceneName, 0.1f));
     }
 
     public void LoadUIScene()

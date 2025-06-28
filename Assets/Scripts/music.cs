@@ -1,46 +1,69 @@
 using UnityEngine;
 
-public class music : MonoBehaviour
+public class Music : MonoBehaviour
 {
-    public GameObject musicSymbolOn;    // "Music On" symbol, always active
-    public GameObject musicSymbolOff;   // "Music Off" symbol, toggles visibility
+    private static Music Instance;
+
+    public GameObject musicObject;       // GameObject with AudioSource
+    public GameObject musicSymbolOn;     // "Music On" symbol (UI)
+    public GameObject musicSymbolOff;    // "Music Off" symbol (UI)
+
     private AudioSource audioSource;
-    public AudioClip audioClip;
 
-    void Start()
+    private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        //if (Instance != null && Instance != this)
+        //{
+        //    Destroy(gameObject); // Prevent duplicates
+        //    return;
+        //}
+
+        //Instance = this;
+        //DontDestroyOnLoad(gameObject); // Persist entire GameObject (with symbols)
+
+        // Setup AudioSource
+        if (musicObject == null)
+            musicObject = this.gameObject;
+
+        audioSource = musicObject.GetComponent<AudioSource>();
         if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
+            audioSource = musicObject.AddComponent<AudioSource>();
 
-        if (audioClip != null)
+        // Start music if clip assigned
+        if (audioSource.clip != null)
         {
-            audioSource.clip = audioClip;
+            audioSource.loop = true;
+            //audioSource.Play();
         }
-
-        // Start with music playing and "Off" symbol disabled
-        audioSource.loop = true;
-        audioSource.Play();
-        musicSymbolOn.SetActive(true); // Always on
-        musicSymbolOff.SetActive(false); // Off symbol hidden at start
     }
 
-    public void onClick()
+    private void Start()
     {
-        // Check if music is currently playing
+        UpdateSymbolState();
+    }
+
+    public void ToggleMusic()
+    {
         if (audioSource.isPlaying)
         {
-            // Mute music
             audioSource.Pause();
-            musicSymbolOff.SetActive(true);   // Show "Off" symbol
         }
         else
         {
-            // Unmute music
             audioSource.Play();
-            musicSymbolOff.SetActive(false);  // Hide "Off" symbol
         }
+        UpdateSymbolState();
+
+    }
+
+    void UpdateSymbolState()
+    {
+        bool isPlaying = audioSource.isPlaying;
+
+        if (musicSymbolOn != null)
+            musicSymbolOn.SetActive(isPlaying);
+
+        if (musicSymbolOff != null)
+            musicSymbolOff.SetActive(!isPlaying);
     }
 }
