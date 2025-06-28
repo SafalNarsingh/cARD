@@ -2,28 +2,45 @@ using UnityEngine;
 
 public class music : MonoBehaviour
 {
-    public GameObject musicSymbol; // Reference to the music symbol GameObject
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject musicSymbolOn;    // "Music On" symbol, always active
+    public GameObject musicSymbolOff;   // "Music Off" symbol, toggles visibility
+    private AudioSource audioSource;
+    public AudioClip audioClip;
+
     void Start()
     {
-        
-    }
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+        }
+
+        // Start with music playing and "Off" symbol disabled
+        audioSource.loop = true;
+        audioSource.Play();
+        musicSymbolOn.SetActive(true); // Always on
+        musicSymbolOff.SetActive(false); // Off symbol hidden at start
     }
 
     public void onClick()
     {
-        if (musicSymbol.activeSelf)
+        // Check if music is currently playing
+        if (audioSource.isPlaying)
         {
-            musicSymbol.SetActive(false);
+            // Mute music
+            audioSource.Pause();
+            musicSymbolOff.SetActive(true);   // Show "Off" symbol
         }
         else
         {
-            musicSymbol.SetActive(true);
+            // Unmute music
+            audioSource.Play();
+            musicSymbolOff.SetActive(false);  // Hide "Off" symbol
         }
     }
 }
