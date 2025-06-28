@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class ARObjectRotation : MonoBehaviour
 {
     [Header("Rotation Settings")]
-    public float rotationSpeed = 2.0f;
-    public bool enableXRotation = true;
+    public float rotationSpeed = 0.13f;
+    public bool enableXRotation = false;
     public bool enableYRotation = true;
     public bool enableZRotation = false;
 
