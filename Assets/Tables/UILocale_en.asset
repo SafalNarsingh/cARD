@@ -30,6 +30,22 @@ MonoBehaviour:
     m_Localized: 3D Placer
     m_Metadata:
       m_Items: []
+  - m_Id: 1026859615272960
+    m_Localized: Objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027084287361024
+    m_Localized: Animals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027610592821248
+    m_Localized: Plants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027840474234880
+    m_Localized: Vehicles
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

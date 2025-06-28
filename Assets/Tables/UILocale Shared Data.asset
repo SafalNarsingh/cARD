@@ -24,7 +24,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 486775865344
-    m_Key: ho me.3DPlacer
+    m_Key: home.3DPlacer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1026859615272960
+    m_Key: 3DPlacer.objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027084287361024
+    m_Key: 3DPlacer.animals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027610592821248
+    m_Key: 3DPlacer.plants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027840474234880
+    m_Key: 3DPlacer.vehicles
     m_Metadata:
       m_Items: []
   m_Metadata:
