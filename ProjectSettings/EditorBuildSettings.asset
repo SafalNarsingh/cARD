@@ -15,6 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/3D Placer.unity
     guid: 1a6bfd48a67b5cb44b943e509a00424f
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 45cd2c88796c0ce4c8be08baa43d627b, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a26f33212a5f45e4f8bb23ec52810a34, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: ee4f9a839db73ef4f80ca412d1f455b4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.localization.settings: {fileID: 11400000, guid: 91a37a3fad386194dae441ca6c7c8902, type: 2}
