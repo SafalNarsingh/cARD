@@ -6,72 +6,142 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARTapToPlace : MonoBehaviour
 {
+    [Header("Prefabs")]
     public GameObject objectToPlace;
     public GameObject placementIndicator;
 
+    [Header("Debug")]
+    public bool showDebugInfo = true;
+
     private XROrigin arOrigin;
     private ARRaycastManager arRaycastManager;
+    private Camera arCamera;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
 
-    void Start()    
+    void Start()
     {
-        arOrigin = Object.FindFirstObjectByType<XROrigin>();
-        arRaycastManager = Object.FindFirstObjectByType<ARRaycastManager>();
+        // Find AR components
+        arOrigin = FindFirstObjectByType<XROrigin>();
+        arRaycastManager = FindFirstObjectByType<ARRaycastManager>();
+
+        // Get the AR camera
+        if (arOrigin != null)
+        {
+            arCamera = arOrigin.Camera;
+        }
+        else
+        {
+            arCamera = Camera.main;
+        }
+
+        // Validate setup
+        if (arRaycastManager == null)
+        {
+            Debug.LogError("ARRaycastManager not found! Make sure it's added to your AR Session Origin.");
+        }
+
+        if (objectToPlace == null)
+        {
+            Debug.LogError("Object to Place is not assigned!");
+        }
+
+        if (placementIndicator == null)
+        {
+            Debug.LogError("Placement Indicator is not assigned!");
+        }
+        else
+        {
+            // Make sure indicator starts hidden
+            placementIndicator.SetActive(false);
+        }
     }
 
-void Update()
+    void Update()
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
 
+        // Handle touch input
         if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             PlaceObject();
+        }
+
+        // Debug info
+        if (showDebugInfo)
+        {
+            Debug.Log($"Placement Valid: {placementPoseIsValid}, Touch Count: {Input.touchCount}");
         }
     }
 
     private void PlaceObject()
     {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+        if (objectToPlace != null && placementPoseIsValid)
+        {
+            GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+            Debug.Log($"Object placed at: {placementPose.position}");
+        }
     }
 
     private void UpdatePlacementIndicator()
     {
-        if (placementPoseIsValid)
+        if (placementIndicator != null)
         {
-            placementIndicator.SetActive(true);
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
-        }
-        else
-        {
-            placementIndicator.SetActive(false);
+            if (placementPoseIsValid)
+            {
+                placementIndicator.SetActive(true);
+                placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+            }
+            else
+            {
+                placementIndicator.SetActive(false);
+            }
         }
     }
 
     private void UpdatePlacementPose()
     {
-        var screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
-        var hits = new List<ARRaycastHit>();
+        // Use screen center for raycast
+        Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+        List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-        // Raycast against trackable planes
-        if (arRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes))
+        // Perform raycast
+        if (arRaycastManager != null && arRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes))
         {
-            placementPoseIsValid = hits.Count > 0;
-            if (placementPoseIsValid)
+            if (hits.Count > 0)
             {
-                // Use the first hit
+                placementPoseIsValid = true;
                 placementPose = hits[0].pose;
 
-                // Adjust the pose to face the camera's forward direction
-                var cameraForward = Camera.main.transform.forward;
-                var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-                placementPose.rotation = Quaternion.LookRotation(cameraBearing);
+                // Optional: Make object face the camera
+                if (arCamera != null)
+                {
+                    Vector3 cameraForward = arCamera.transform.forward;
+                    Vector3 cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+                    if (cameraBearing != Vector3.zero)
+                    {
+                        placementPose.rotation = Quaternion.LookRotation(cameraBearing);
+                    }
+                }
+
+                if (showDebugInfo)
+                {
+                    Debug.Log($"Valid placement pose found at: {placementPose.position}");
+                }
+            }
+            else
+            {
+                placementPoseIsValid = false;
             }
         }
         else
         {
             placementPoseIsValid = false;
+            if (showDebugInfo && arRaycastManager == null)
+            {
+                Debug.LogWarning("ARRaycastManager is null!");
+            }
         }
     }
 }
