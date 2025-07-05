@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -65,23 +65,39 @@ public class ARTapToPlace : MonoBehaviour
         // Handle touch input
         if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
+            Debug.Log("Touch detected! Attempting to place object...");
             PlaceObject();
         }
 
         // Debug info
         if (showDebugInfo)
         {
-            Debug.Log($"Placement Valid: {placementPoseIsValid}, Touch Count: {Input.touchCount}");
+            if (Input.touchCount > 0)
+            {
+                Debug.Log($"Touch detected! Placement Valid: {placementPoseIsValid}, Touch Count: {Input.touchCount}");
+            }
         }
     }
 
     private void PlaceObject()
     {
-        if (objectToPlace != null && placementPoseIsValid)
+        if (objectToPlace == null)
         {
-            GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
-            Debug.Log($"Object placed at: {placementPose.position}");
+            Debug.LogError("Object to Place is NULL! Please assign a prefab in the inspector.");
+            return;
         }
+
+        if (!placementPoseIsValid)
+        {
+            Debug.LogWarning("Placement pose is not valid!");
+            return;
+        }
+
+        GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+        Debug.Log($"✅ Object placed successfully at: {placementPose.position}");
+
+        // Optional: Make the object slightly bigger so it's visible
+        placedObject.transform.localScale = objectToPlace.transform.localScale;
     }
 
     private void UpdatePlacementIndicator()
