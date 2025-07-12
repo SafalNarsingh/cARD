@@ -34,7 +34,7 @@ MonoBehaviour:
     outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
     unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
   runtimeResources:
-    register: {fileID: 11400000, guid: caeba6ecda451416c803389918ddea4a, type: 2}
+    register: {fileID: 11400000, guid: 41fc44d3a90764cc7b50f1019f2d8310, type: 2}
   videoBackground:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded, type: 3}
