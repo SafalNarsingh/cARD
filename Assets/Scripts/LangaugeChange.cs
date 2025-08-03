@@ -4,11 +4,16 @@ using System.Collections;
 
 public class LanguageSwitcher : MonoBehaviour
 {
-
+    public static LanguageSwitcher Instance;
     void Start()
     {
         // Set default language to Nepali
         StartCoroutine(SetLocaleAtStart("ne-NP"));
+    }
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
     }
 
     // Coroutine ensures localization system is initialized before setting locale
@@ -32,6 +37,10 @@ public class LanguageSwitcher : MonoBehaviour
 
     public void ToggleLanguage()
     {
+        if (ModelPlacer.Instance != null)
+        {
+            ModelPlacer.Instance.UpdateModelText();
+        }
         // Get current locale code
         string currentCode = LocalizationSettings.SelectedLocale.Identifier.Code;
 
@@ -57,5 +66,10 @@ public class LanguageSwitcher : MonoBehaviour
         Debug.LogWarning("Locale with code '" + code + "' not found.");
     }
 
-    
+    public bool IsNepali()
+    {
+        string currentCode = LocalizationSettings.SelectedLocale?.Identifier.Code ?? "en";
+        return currentCode == "ne-NP";
+    }
+
 }
