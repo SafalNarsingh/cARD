@@ -13,6 +13,7 @@ public class ModelData
     }
 }
 
+[System.Serializable]
 public class ModelSection
 {
     public string sectionName;

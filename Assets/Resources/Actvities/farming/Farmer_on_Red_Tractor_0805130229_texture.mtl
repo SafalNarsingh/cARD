@@ -1,12 +1,12 @@
-# Blender 4.0.0 MTL File: 'None'
+# Blender 4.3.0 MTL File: 'None'
 # www.blender.org
 
-newmtl Material.001
+newmtl Material
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
-Ni 1.450000
+Ni 1.500000
 d 1.000000
 illum 2
-map_Kd Farmer_s_Day_at_Work_0627085824_texture.png
+map_Kd Farmer_on_Red_Tractor_0805130229_texture.png
