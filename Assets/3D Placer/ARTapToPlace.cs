@@ -1,82 +1,83 @@
 ﻿using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-[RequireComponent(typeof(ARRaycastManager))]
-public class ARTapToPlace : MonoBehaviour
+public class ARTapToPlaceObject : MonoBehaviour
 {
-    [Header("Placement Settings")]
-    [SerializeField]
-    [Tooltip("The placement indicator showing where the object can be placed.")]
-    GameObject placementIndicator;
+    [Header("AR Placement References")]
+    public GameObject objectToPlace;
+    public GameObject placementIndicator;
 
-    [HideInInspector]
-    public GameObject placedPrefab; // This will be set by ModelPlacer
-
-    [HideInInspector]
-    public GameObject spawnedObject; // Made public for ModelPlacer access
-
-    TouchInput controls;
-    private ARRaycastManager aRRaycastManager;
     private XROrigin arOrigin;
-    private Camera arCamera;
+    private ARRaycastManager raycastManager;
+
     private Pose placementPose;
     private bool placementPoseIsValid = false;
-    private List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    private GameObject spawnedObject;
 
-    private void Awake()
+    void Start()
     {
-        aRRaycastManager = GetComponent<ARRaycastManager>();
-        arOrigin = GetComponent<XROrigin>();
-        arCamera = arOrigin != null ? arOrigin.Camera : Camera.main;
+        // ✅ Updated object finder API
+        arOrigin = Object.FindFirstObjectByType<XROrigin>();
+        raycastManager = Object.FindFirstObjectByType<ARRaycastManager>();
 
-        controls = new TouchInput();
-        controls.control.touch.performed += ctx =>
+        if (placementIndicator != null)
         {
-            if (ctx.control.device is Pointer device)
-            {
-                OnPress();
-            }
-        };
-
-        ValidateSetup();
-    }
-
-    private void ValidateSetup()
-    {
-        if (aRRaycastManager == null)
-            Debug.LogError("ARRaycastManager not found!");
-        if (placementIndicator == null)
-            Debug.LogError("Placement Indicator is not assigned!");
-        else
             placementIndicator.SetActive(false);
+
+            // Ensure placement indicator has a collider
+            if (placementIndicator.GetComponent<Collider>() == null)
+            {
+                var collider = placementIndicator.AddComponent<BoxCollider>();
+                collider.isTrigger = true;
+            }
+        }
     }
 
-    private void OnEnable() => controls.control.Enable();
-    private void OnDisable() => controls.control.Disable();
-    private void Update() => UpdatePlacementIndicator();
-
-    void OnPress()
+    void Update()
     {
-        if (placementPoseIsValid && placedPrefab != null)
-        {
-            // Remove previous model
-            if (spawnedObject != null)
-                Destroy(spawnedObject);
+        UpdatePlacementPose();
+        UpdatePlacementIndicator();
 
-            // Place new model
-            spawnedObject = Instantiate(placedPrefab, placementPose.position, placementPose.rotation);
-            Debug.Log($"✅ Model placed: {placedPrefab.name}");
+        if (placementPoseIsValid)
+        {
+            HandleTouchInput();
+        }
+    }
+
+    private void HandleTouchInput()
+    {
+        if (Input.touchCount == 0) return;
+
+        Touch touch = Input.GetTouch(0);
+        if (touch.phase != TouchPhase.Began) return;
+
+        // Raycast from touch to detect if indicator was tapped
+        Ray ray = Camera.main.ScreenPointToRay(touch.position);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.transform == placementIndicator.transform)
+            {
+                PlaceObject();
+            }
+        }
+    }
+
+    private void PlaceObject()
+    {
+        if (objectToPlace == null || !placementPoseIsValid) return;
+
+        if (spawnedObject == null)
+        {
+            spawnedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
         }
         else
         {
-            if (placedPrefab == null)
-                Debug.LogWarning("No model selected to place!");
-            else
-                Debug.LogWarning("No valid placement position!");
+            spawnedObject.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
     }
 
@@ -84,29 +85,34 @@ public class ARTapToPlace : MonoBehaviour
     {
         if (placementIndicator == null) return;
 
-        Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
-        hits.Clear();
-
-        if (aRRaycastManager?.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon) == true && hits.Count > 0)
+        if (placementPoseIsValid)
         {
-            placementPoseIsValid = true;
-            placementPose = hits[0].pose;
-
-            if (arCamera != null)
-            {
-                Vector3 cameraForward = arCamera.transform.forward;
-                Vector3 cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-                if (cameraBearing != Vector3.zero)
-                    placementPose.rotation = Quaternion.LookRotation(cameraBearing);
-            }
-
             placementIndicator.SetActive(true);
             placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
-            placementPoseIsValid = false;
             placementIndicator.SetActive(false);
+        }
+    }
+
+    private void UpdatePlacementPose()
+    {
+        var screenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
+        var hits = new List<ARRaycastHit>();
+
+        if (raycastManager != null)
+            placementPoseIsValid = raycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
+        else
+            placementPoseIsValid = false;
+
+        if (placementPoseIsValid && hits.Count > 0)
+        {
+            placementPose = hits[0].pose;
+
+            var cameraForward = Camera.main.transform.forward;
+            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+            placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
     }
 }

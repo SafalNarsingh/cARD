@@ -37,10 +37,10 @@ public class LanguageSwitcher : MonoBehaviour
 
     public void ToggleLanguage()
     {
-        if (ModelPlacer.Instance != null)
-        {
-            ModelPlacer.Instance.UpdateModelText();
-        }
+        //if (ModelPlacer.Instance != null)
+        //{
+        //    ModelPlacer.Instance.UpdateModelText();
+        //}
         // Get current locale code
         string currentCode = LocalizationSettings.SelectedLocale.Identifier.Code;
 

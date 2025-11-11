@@ -486,13 +486,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 600607257}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: School
+  displayText2: "\u0935\u093F\u0926\u094D\u092F\u093E\u0932\u092F"
 --- !u!1 &37969779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a2827feee6a3ad4e8bb51a2385c7b24, type: 3}
@@ -781,13 +781,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1061642201}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Sleeping
+  displayText2: "\u0928\u093F\u0926\u093E\u0909\u0928\u0941"
 --- !u!1 &74071486
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,13 +926,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 235497384}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Zoo
+  displayText2: "\u091A\u093F\u0921\u093F\u092F\u093E\u0916\u093E\u0928\u093E"
 --- !u!1 &74639544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20c4a4eff68dc654e8cc9c753bf05c4b, type: 2}
   m_sharedMaterial: {fileID: 5750339522352517606, guid: 20c4a4eff68dc654e8cc9c753bf05c4b, type: 2}
@@ -1764,13 +1764,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 2056903261}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Restaurant
+  displayText2: "\u092D\u094B\u091C\u0928\u093E\u0932\u092F"
 --- !u!1 &150008652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6f47f4f2ee441da4b89a39605235738b, type: 3}
@@ -2131,6 +2131,11 @@ PrefabInstance:
 --- !u!4 &192007817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f93e79e86f585014ca9ca4cc5a7531d0, type: 3}
+  m_PrefabInstance: {fileID: 192007816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192007818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f93e79e86f585014ca9ca4cc5a7531d0, type: 3}
   m_PrefabInstance: {fileID: 192007816}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &200533288
@@ -2513,13 +2518,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 741190983}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: House
+  displayText2: "\u0918\u0930"
 --- !u!1 &230569347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,6 +2755,11 @@ PrefabInstance:
 --- !u!4 &234845493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 182735d4558241e4fb9df6fb8c243b69, type: 3}
+  m_PrefabInstance: {fileID: 234845492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &234845494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 182735d4558241e4fb9df6fb8c243b69, type: 3}
   m_PrefabInstance: {fileID: 234845492}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &235497384 stripped
@@ -3146,13 +3156,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1673018624}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Bedroom
+  displayText2: "\u0938\u0941\u0924\u094D\u0928\u0947\u0915\u094B\u0920\u093E"
 --- !u!1001 &296573330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3318,6 +3328,11 @@ PrefabInstance:
 --- !u!4 &305101666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5213a2b0a73bec346a7a74d9ddd63f20, type: 3}
+  m_PrefabInstance: {fileID: 305101665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &305101667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5213a2b0a73bec346a7a74d9ddd63f20, type: 3}
   m_PrefabInstance: {fileID: 305101665}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326131142
@@ -3626,13 +3641,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 579082788}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Classroom
+  displayText2: "\u0915\u0915\u094D\u0937\u093E \u0915\u094B\u0920\u093E"
 --- !u!1001 &358989139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3693,6 +3708,11 @@ PrefabInstance:
 --- !u!4 &358989140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1db5bd7ac56660b4a80109d4e67d5a03, type: 3}
+  m_PrefabInstance: {fileID: 358989139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &358989141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1db5bd7ac56660b4a80109d4e67d5a03, type: 3}
   m_PrefabInstance: {fileID: 358989139}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &387240811
@@ -5183,6 +5203,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39f9205120547f348b7ae2840af1834c, type: 3}
   m_PrefabInstance: {fileID: 658239261}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &658239263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39f9205120547f348b7ae2840af1834c, type: 3}
+  m_PrefabInstance: {fileID: 658239261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &668145618 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c4744a64e54e4fd0add1b0e4cafd94e, type: 3}
@@ -5297,6 +5322,11 @@ PrefabInstance:
 --- !u!4 &688034699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c4dd5adb1763fe4596b3c60ee23a0ef, type: 3}
+  m_PrefabInstance: {fileID: 688034698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &688034700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2c4dd5adb1763fe4596b3c60ee23a0ef, type: 3}
   m_PrefabInstance: {fileID: 688034698}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &696229770 stripped
@@ -5506,13 +5536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1875937613}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Farming
+  displayText2: "\u0916\u0947\u0924\u0940"
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,13 +6350,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 233197661}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Hospital
+  displayText2: "\u0905\u0938\u094D\u092A\u0924\u093E\u0932"
 --- !u!1001 &795872670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6548,13 +6578,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 658239263}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Shopping
+  displayText2: "\u0915\u093F\u0928\u092E\u0947\u0932"
 --- !u!1 &815753660
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,13 +6723,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 819940521}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Shop
+  displayText2: "\u092A\u0938\u0932"
 --- !u!1 &819940521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 039722a94e7c6144b8339351e528fb51, type: 3}
@@ -6843,13 +6873,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 192007818}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Teaching
+  displayText2: "\u0936\u093F\u0915\u094D\u0937\u0923"
 --- !u!1001 &841378398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7114,13 +7144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1688684962}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Living Room
+  displayText2: "\u092C\u0948\u0920\u0915 \u0915\u094B\u0920\u093E"
 --- !u!1 &918535257
 GameObject:
   m_ObjectHideFlags: 0
@@ -7604,6 +7634,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b83a97b814be6a41a2f3d7f1635e7aa, type: 3}
   m_PrefabInstance: {fileID: 981620274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &981620276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b83a97b814be6a41a2f3d7f1635e7aa, type: 3}
+  m_PrefabInstance: {fileID: 981620274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1010298212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7936,6 +7971,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6c79445ef7afc146873f65a1c4a30a1, type: 3}
   m_PrefabInstance: {fileID: 1061642199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1061642201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d6c79445ef7afc146873f65a1c4a30a1, type: 3}
+  m_PrefabInstance: {fileID: 1061642199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1068290712
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,13 +8114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1355988075}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Farm
+  displayText2: "\u0916\u0947\u0924 \u092C\u093E\u0930\u0940"
 --- !u!1001 &1089447031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8293,13 +8333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1246496544}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Swimming
+  displayText2: "\u092A\u094C\u0921\u0940 \u0916\u0947\u0932\u094D\u0928\u0941"
 --- !u!1 &1105997259
 GameObject:
   m_ObjectHideFlags: 0
@@ -8583,13 +8623,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1606392182}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Riding
+  displayText2: "\u0938\u0935\u093E\u0930\u0940 \u0917\u0930\u094D\u0928\u0941"
 --- !u!1 &1146574025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8728,13 +8768,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 627612816}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Kitchen
+  displayText2: "\u092D\u093E\u0928\u094D\u0938\u093E"
 --- !u!1 &1150321591
 GameObject:
   m_ObjectHideFlags: 0
@@ -8874,13 +8914,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1174557266}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 2053219008}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Flying
+  displayText2: "\u0909\u0921\u094D\u0928\u0941"
 --- !u!1001 &1155087560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9100,13 +9140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1542552234}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Road
+  displayText2: "\u0938\u0921\u0915"
 --- !u!1001 &1174557264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9167,6 +9207,11 @@ PrefabInstance:
 --- !u!4 &1174557265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c8bd4bcbb292fc4eb22a2e0b745a872, type: 3}
+  m_PrefabInstance: {fileID: 1174557264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174557266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c8bd4bcbb292fc4eb22a2e0b745a872, type: 3}
   m_PrefabInstance: {fileID: 1174557264}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1176619176
@@ -9307,13 +9352,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 305101667}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Eating
+  displayText2: "\u0916\u093E\u0928\u0941"
 --- !u!1 &1179632208
 GameObject:
   m_ObjectHideFlags: 0
@@ -9452,13 +9497,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 337102639}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Bathroom
+  displayText2: "\u092C\u093E\u0925\u0930\u0942\u092E"
 --- !u!1 &1193526957
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,13 +9642,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 981620276}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Cooking
+  displayText2: "\u0916\u093E\u0928\u093E \u092A\u0915\u093E\u0909\u0928\u0941"
 --- !u!1 &1200387057
 GameObject:
   m_ObjectHideFlags: 0
@@ -9742,10 +9787,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 688034700}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Bathing
   displayText2: "\u0928\u0941\u0939\u093E\u0909\u0928\u0947"
@@ -9956,6 +10001,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce79fcbfa49800146b1f2ad704e2d2ae, type: 3}
   m_PrefabInstance: {fileID: 1211347832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1211347834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ce79fcbfa49800146b1f2ad704e2d2ae, type: 3}
+  m_PrefabInstance: {fileID: 1211347832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230372149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 00913811205ae4f65b64da9458b1c73c, type: 3}
@@ -10028,6 +10078,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 170ef6cec258a9f4198e43cf374efbc5, type: 3}
   m_PrefabInstance: {fileID: 1244612704}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244612706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 170ef6cec258a9f4198e43cf374efbc5, type: 3}
+  m_PrefabInstance: {fileID: 1244612704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1246496542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10088,6 +10143,11 @@ PrefabInstance:
 --- !u!4 &1246496543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dfa9a53a41460824c9567cf2e517ee49, type: 3}
+  m_PrefabInstance: {fileID: 1246496542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1246496544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dfa9a53a41460824c9567cf2e517ee49, type: 3}
   m_PrefabInstance: {fileID: 1246496542}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1253678093
@@ -11586,13 +11646,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1782223670}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Brushing
+  displayText2: "\u092C\u0941\u0930\u0941\u0938 \u0917\u0930\u094D\u0930\u094D\u0928\u0941"
 --- !u!1 &1467539350
 GameObject:
   m_ObjectHideFlags: 0
@@ -11731,13 +11791,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1211347834}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Watching
+  displayText2: "\u0939\u0947\u0930\u094D\u0928\u0941"
 --- !u!1 &1471424935
 GameObject:
   m_ObjectHideFlags: 0
@@ -11876,13 +11936,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1727380380}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Playing
+  displayText2: "\u0916\u0947\u0932\u094D\u0928\u0941"
 --- !u!1 &1482258193
 GameObject:
   m_ObjectHideFlags: 0
@@ -12368,6 +12428,11 @@ PrefabInstance:
 --- !u!4 &1544370097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a8d414e0a78ac64882948352d9d7a1b, type: 3}
+  m_PrefabInstance: {fileID: 1544370096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1544370098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a8d414e0a78ac64882948352d9d7a1b, type: 3}
   m_PrefabInstance: {fileID: 1544370096}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1545224548
@@ -12963,13 +13028,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 596962368}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Forest
+  displayText2: "\u091C\u0902\u0917\u0932"
 --- !u!1 &1572187176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b964ca40eef274aac205bea04c5947, type: 3}
@@ -13474,13 +13539,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1572187176}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Playground
+  displayText2: "\u0916\u0947\u0932 \u092E\u0948\u0926\u093E\u0928"
 --- !u!1001 &1606392180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13543,6 +13608,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c38c6938a897764290cd7bccf91db02, type: 3}
   m_PrefabInstance: {fileID: 1606392180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1606392182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c38c6938a897764290cd7bccf91db02, type: 3}
+  m_PrefabInstance: {fileID: 1606392180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1622047871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4727e34a2b6795840b18974855ff2467, type: 3}
@@ -13585,7 +13655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.7, y: -116.5}
+  m_AnchoredPosition: {x: 111, y: -152}
   m_SizeDelta: {x: 120, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627260680
@@ -13848,13 +13918,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1244612706}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Writing
+  displayText2: "\u0932\u0947\u0916\u094D\u0928\u0941"
 --- !u!1 &1630397714
 GameObject:
   m_ObjectHideFlags: 0
@@ -13993,13 +14063,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 161718042}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Sky
+  displayText2: "\u0906\u0915\u093E\u0936"
 --- !u!1 &1630402399
 GameObject:
   m_ObjectHideFlags: 0
@@ -14205,6 +14275,11 @@ PrefabInstance:
 --- !u!4 &1646055371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd38d9e0a8c060d47bf8ab14fac4696a, type: 3}
+  m_PrefabInstance: {fileID: 1646055370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1646055372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dd38d9e0a8c060d47bf8ab14fac4696a, type: 3}
   m_PrefabInstance: {fileID: 1646055370}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1651702403 stripped
@@ -14938,13 +15013,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1544370098}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Raining
+  displayText2: "\u092A\u093E\u0928\u0940 \u092A\u0930\u094D\u0928\u0941 "
 --- !u!1001 &1727380378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15005,6 +15080,11 @@ PrefabInstance:
 --- !u!4 &1727380379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70b230bbc74d6ea418c89bb17c8cdd8b, type: 3}
+  m_PrefabInstance: {fileID: 1727380378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1727380380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 70b230bbc74d6ea418c89bb17c8cdd8b, type: 3}
   m_PrefabInstance: {fileID: 1727380378}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1744034319
@@ -15290,13 +15370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 358989141}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Watering
+  displayText2: "\u092A\u093E\u0928\u0940 \u0939\u093E\u0932\u094D\u0928\u0947"
 --- !u!1 &1747343303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bef079e2a22998a4f8e6b23662f5a6b7, type: 3}
@@ -16110,6 +16190,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0018089eb068b348b35066845a926a8, type: 3}
   m_PrefabInstance: {fileID: 1782223668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1782223670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0018089eb068b348b35066845a926a8, type: 3}
+  m_PrefabInstance: {fileID: 1782223668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1787379361
 GameObject:
   m_ObjectHideFlags: 0
@@ -16248,13 +16333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 234845494}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Travelling
+  displayText2: "\u092F\u093E\u0924\u094D\u0930\u093E \u0917\u0930\u094D\u0928\u0941"
 --- !u!4 &1810548217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9b893b1a48441e438be48d8bbcbc050, type: 3}
@@ -16366,6 +16451,11 @@ PrefabInstance:
 --- !u!4 &1875937612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 852687639db15bb42906c3d3185ab92a, type: 3}
+  m_PrefabInstance: {fileID: 1875937611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1875937613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 852687639db15bb42906c3d3185ab92a, type: 3}
   m_PrefabInstance: {fileID: 1875937611}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1894017630 stripped
@@ -17242,7 +17332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -116, y: -129}
+  m_AnchoredPosition: {x: -116, y: -158}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011513669
@@ -17717,13 +17807,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1646055372}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Studying
+  displayText2: "\u0905\u0927\u094D\u092F\u092F\u0928"
 --- !u!1 &2053219006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17987,13 +18077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelObject: {fileID: 0}
-  textButton: {fileID: 0}
-  soundButton: {fileID: 0}
-  closeButton: {fileID: 0}
+  modelObject: {fileID: 1961891413}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
-  displayText: 
-  displayText2: 
+  displayText: Swimming Pool
+  displayText2: "\u092A\u094C\u0902\u0921\u0940 \u092A\u094B\u0916\u0930\u0940"
 --- !u!4 &2084630325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96b964ca40eef274aac205bea04c5947, type: 3}
