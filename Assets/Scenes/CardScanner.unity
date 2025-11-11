@@ -260,9 +260,10 @@ MonoBehaviour:
   modelObject: {fileID: 1240617237}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Apple
-  displayText2: 
+  displayText2: "\u0938\u094D\u092F\u093E\u0909"
 --- !u!1001 &24194000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,6 +360,7 @@ GameObject:
   - component: {fileID: 35559768}
   - component: {fileID: 35559767}
   - component: {fileID: 35559769}
+  - component: {fileID: 35559770}
   m_Layer: 0
   m_Name: School
   m_TagString: Untagged
@@ -472,6 +474,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 35559768}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &35559770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35559764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &37969779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a2827feee6a3ad4e8bb51a2385c7b24, type: 3}
@@ -618,9 +639,10 @@ MonoBehaviour:
   modelObject: {fileID: 696229770}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: TV
-  displayText2: 
+  displayText2: "\u091F\u093F\u092D\u0940"
 --- !u!1 &53989231
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +655,7 @@ GameObject:
   - component: {fileID: 53989235}
   - component: {fileID: 53989234}
   - component: {fileID: 53989236}
+  - component: {fileID: 53989237}
   m_Layer: 0
   m_Name: Sleeping
   m_TagString: Untagged
@@ -746,6 +769,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 53989235}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &53989237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53989231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &74071486
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +800,7 @@ GameObject:
   - component: {fileID: 74071490}
   - component: {fileID: 74071489}
   - component: {fileID: 74071491}
+  - component: {fileID: 74071492}
   m_Layer: 0
   m_Name: Zoo
   m_TagString: Untagged
@@ -871,6 +914,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 74071490}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &74071492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74071486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &74639544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1291,7 @@ GameObject:
   - component: {fileID: 104713896}
   - component: {fileID: 104713895}
   - component: {fileID: 104713897}
+  - component: {fileID: 104713898}
   m_Layer: 0
   m_Name: Library
   m_TagString: Untagged
@@ -1342,6 +1405,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 104713896}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &104713898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104713892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 150008652}
+  textButton: {fileID: 200533290}
+  soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
+  audioSource: {fileID: 0}
+  displayText: Library
+  displayText2: "\u092A\u0941\u0938\u094D\u0924\u0915\u093E\u0932\u092F"
 --- !u!1 &126029508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1638,7 @@ GameObject:
   - component: {fileID: 142243749}
   - component: {fileID: 142243748}
   - component: {fileID: 142243750}
+  - component: {fileID: 142243751}
   m_Layer: 0
   m_Name: Restaurant
   m_TagString: Untagged
@@ -1669,6 +1752,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 142243749}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &142243751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142243745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &150008652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6f47f4f2ee441da4b89a39605235738b, type: 3}
@@ -1815,9 +1917,10 @@ MonoBehaviour:
   modelObject: {fileID: 401654056}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Ball
-  displayText2: 
+  displayText2: "\u092D\u0915\u0941\u0928\u094D\u0921\u094B"
 --- !u!1 &161718042 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ee3b8bf56177bd4c844851cb1d88439, type: 3}
@@ -1964,9 +2067,10 @@ MonoBehaviour:
   modelObject: {fileID: 1622047871}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Tractor
-  displayText2: 
+  displayText2: "\u091F\u094D\u0930\u092F\u093E\u0915\u094D\u091F\u0930"
 --- !u!1001 &192007816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2283,6 +2387,7 @@ GameObject:
   - component: {fileID: 229378740}
   - component: {fileID: 229378739}
   - component: {fileID: 229378741}
+  - component: {fileID: 229378742}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -2396,6 +2501,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 229378740}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &229378742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229378736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &230569347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,6 +3020,7 @@ GameObject:
   - component: {fileID: 285543582}
   - component: {fileID: 285543581}
   - component: {fileID: 285543583}
+  - component: {fileID: 285543584}
   m_Layer: 0
   m_Name: Bedroom
   m_TagString: Untagged
@@ -3009,6 +3134,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 285543582}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &285543584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285543578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &296573330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3356,6 +3500,7 @@ GameObject:
   - component: {fileID: 351257914}
   - component: {fileID: 351257913}
   - component: {fileID: 351257915}
+  - component: {fileID: 351257916}
   m_Layer: 0
   m_Name: Clasroom
   m_TagString: Untagged
@@ -3469,6 +3614,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 351257914}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &351257916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351257910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &358989139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5214,6 +5378,7 @@ GameObject:
   - component: {fileID: 699904301}
   - component: {fileID: 699904300}
   - component: {fileID: 699904302}
+  - component: {fileID: 699904303}
   m_Layer: 0
   m_Name: Farming
   m_TagString: Untagged
@@ -5329,6 +5494,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 699904301}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &699904303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699904297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5558,6 +5742,7 @@ RectTransform:
   - {fileID: 1627260679}
   - {fileID: 200533289}
   - {fileID: 2053219007}
+  - {fileID: 716166643}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5565,6 +5750,126 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &716166642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716166643}
+  - component: {fileID: 716166646}
+  - component: {fileID: 716166645}
+  - component: {fileID: 716166644}
+  m_Layer: 5
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &716166643
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716166642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 710140128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 129.1, y: 120.099976}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &716166644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716166642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 716166645}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &716166645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716166642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 896764183, guid: 156ec492e516ccb4099add479601d65e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &716166646
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716166642}
+  m_CullTransparentMesh: 1
 --- !u!1001 &716919826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5889,6 +6194,7 @@ GameObject:
   - component: {fileID: 795179095}
   - component: {fileID: 795179094}
   - component: {fileID: 795179096}
+  - component: {fileID: 795179097}
   m_Layer: 0
   m_Name: Hospital
   m_TagString: Untagged
@@ -6002,6 +6308,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 795179095}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &795179097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795179091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &795872670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6097,6 +6422,7 @@ GameObject:
   - component: {fileID: 811121542}
   - component: {fileID: 811121541}
   - component: {fileID: 811121543}
+  - component: {fileID: 811121544}
   m_Layer: 0
   m_Name: Shopping
   m_TagString: Untagged
@@ -6210,6 +6536,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 811121542}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &811121544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811121538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &815753660
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,6 +6567,7 @@ GameObject:
   - component: {fileID: 815753664}
   - component: {fileID: 815753663}
   - component: {fileID: 815753665}
+  - component: {fileID: 815753666}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -6335,6 +6681,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 815753664}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &815753666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815753660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &819940521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 039722a94e7c6144b8339351e528fb51, type: 3}
@@ -6352,6 +6717,7 @@ GameObject:
   - component: {fileID: 830706618}
   - component: {fileID: 830706617}
   - component: {fileID: 830706619}
+  - component: {fileID: 830706620}
   m_Layer: 0
   m_Name: Teaching
   m_TagString: Untagged
@@ -6465,6 +6831,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 830706618}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &830706620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830706614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &841378398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6603,6 +6988,7 @@ GameObject:
   - component: {fileID: 887037061}
   - component: {fileID: 887037060}
   - component: {fileID: 887037062}
+  - component: {fileID: 887037063}
   m_Layer: 0
   m_Name: Livingroom
   m_TagString: Untagged
@@ -6716,6 +7102,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 887037061}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &887037063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887037057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &918535257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6857,6 +7262,7 @@ MonoBehaviour:
   modelObject: {fileID: 2087033558}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Cycle
   displayText2: "\u0938\u093E\u0907\u0915\u0932"
@@ -7132,9 +7538,10 @@ MonoBehaviour:
   modelObject: {fileID: 980741081}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Pigeon
-  displayText2: 
+  displayText2: "\u092A\u0930\u0947\u0935\u093E"
 --- !u!1001 &981620274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7541,6 +7948,7 @@ GameObject:
   - component: {fileID: 1068290716}
   - component: {fileID: 1068290715}
   - component: {fileID: 1068290717}
+  - component: {fileID: 1068290718}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Untagged
@@ -7654,6 +8062,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1068290716}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1068290718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068290712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &1089447031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7740,6 +8167,7 @@ GameObject:
   - component: {fileID: 1101763738}
   - component: {fileID: 1101763737}
   - component: {fileID: 1101763739}
+  - component: {fileID: 1101763740}
   m_Layer: 0
   m_Name: Swimming
   m_TagString: Untagged
@@ -7853,6 +8281,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1101763738}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1101763740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101763734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1105997259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7994,9 +8441,10 @@ MonoBehaviour:
   modelObject: {fileID: 1600165722}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Pencil
-  displayText2: 
+  displayText2: "\u092A\u0947\u0928\u094D\u0938\u093F\u0932"
 --- !u!1 &1140598144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,6 +8457,7 @@ GameObject:
   - component: {fileID: 1140598148}
   - component: {fileID: 1140598147}
   - component: {fileID: 1140598149}
+  - component: {fileID: 1140598150}
   m_Layer: 0
   m_Name: Riding
   m_TagString: Untagged
@@ -8122,6 +8571,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1140598148}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1140598150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140598144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1146574025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8134,6 +8602,7 @@ GameObject:
   - component: {fileID: 1146574029}
   - component: {fileID: 1146574028}
   - component: {fileID: 1146574030}
+  - component: {fileID: 1146574031}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -8247,6 +8716,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1146574029}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1146574031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146574025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1150321591
 GameObject:
   m_ObjectHideFlags: 0
@@ -8259,6 +8747,7 @@ GameObject:
   - component: {fileID: 1150321595}
   - component: {fileID: 1150321594}
   - component: {fileID: 1150321596}
+  - component: {fileID: 1150321597}
   m_Layer: 0
   m_Name: Flying
   m_TagString: Untagged
@@ -8373,6 +8862,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1150321595}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1150321597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150321591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &1155087560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8466,6 +8974,7 @@ GameObject:
   - component: {fileID: 1170857728}
   - component: {fileID: 1170857727}
   - component: {fileID: 1170857729}
+  - component: {fileID: 1170857730}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -8579,6 +9088,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1170857728}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1170857730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170857724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &1174557264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8653,6 +9181,7 @@ GameObject:
   - component: {fileID: 1176619180}
   - component: {fileID: 1176619179}
   - component: {fileID: 1176619181}
+  - component: {fileID: 1176619182}
   m_Layer: 0
   m_Name: Eating
   m_TagString: Untagged
@@ -8766,6 +9295,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1176619180}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1176619182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176619176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1179632208
 GameObject:
   m_ObjectHideFlags: 0
@@ -8778,6 +9326,7 @@ GameObject:
   - component: {fileID: 1179632212}
   - component: {fileID: 1179632211}
   - component: {fileID: 1179632213}
+  - component: {fileID: 1179632214}
   m_Layer: 0
   m_Name: Bathroom
   m_TagString: Untagged
@@ -8891,6 +9440,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1179632212}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1179632214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179632208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1193526957
 GameObject:
   m_ObjectHideFlags: 0
@@ -8903,6 +9471,7 @@ GameObject:
   - component: {fileID: 1193526961}
   - component: {fileID: 1193526960}
   - component: {fileID: 1193526962}
+  - component: {fileID: 1193526963}
   m_Layer: 0
   m_Name: Cooking
   m_TagString: Untagged
@@ -9016,6 +9585,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1193526961}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1193526963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193526957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1200387057
 GameObject:
   m_ObjectHideFlags: 0
@@ -9028,6 +9616,7 @@ GameObject:
   - component: {fileID: 1200387061}
   - component: {fileID: 1200387060}
   - component: {fileID: 1200387062}
+  - component: {fileID: 1200387063}
   m_Layer: 0
   m_Name: Bathing
   m_TagString: Untagged
@@ -9141,6 +9730,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1200387061}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1200387063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200387057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: Bathing
+  displayText2: "\u0928\u0941\u0939\u093E\u0909\u0928\u0947"
 --- !u!1 &1204893003
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,9 +9890,10 @@ MonoBehaviour:
   modelObject: {fileID: 1386174879}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: ToothBrush
-  displayText2: 
+  displayText2: "\u091F\u0942\u0925\u092C\u094D\u0930\u0936"
 --- !u!1001 &1211347832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9732,9 +10341,10 @@ MonoBehaviour:
   modelObject: {fileID: 1894017630}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Soap
-  displayText2: 
+  displayText2: "\u0938\u093E\u092C\u0941\u0928"
 --- !u!1001 &1282353230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10249,9 +10859,10 @@ MonoBehaviour:
   modelObject: {fileID: 1747343303}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Momo
-  displayText2: 
+  displayText2: "\u092E:\u092E"
 --- !u!1001 &1383950195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10849,6 +11460,7 @@ GameObject:
   - component: {fileID: 1452820628}
   - component: {fileID: 1452820627}
   - component: {fileID: 1452820629}
+  - component: {fileID: 1452820630}
   m_Layer: 0
   m_Name: Brushing
   m_TagString: Untagged
@@ -10962,6 +11574,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1452820628}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1452820630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452820624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1467539350
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,6 +11605,7 @@ GameObject:
   - component: {fileID: 1467539354}
   - component: {fileID: 1467539353}
   - component: {fileID: 1467539355}
+  - component: {fileID: 1467539356}
   m_Layer: 0
   m_Name: Watching
   m_TagString: Untagged
@@ -11087,6 +11719,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1467539354}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1467539356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467539350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1471424935
 GameObject:
   m_ObjectHideFlags: 0
@@ -11099,6 +11750,7 @@ GameObject:
   - component: {fileID: 1471424939}
   - component: {fileID: 1471424938}
   - component: {fileID: 1471424940}
+  - component: {fileID: 1471424941}
   m_Layer: 0
   m_Name: Playing
   m_TagString: Untagged
@@ -11212,6 +11864,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1471424939}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1471424941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471424935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1482258193
 GameObject:
   m_ObjectHideFlags: 0
@@ -11353,9 +12024,10 @@ MonoBehaviour:
   modelObject: {fileID: 738054596}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Swimming Tube
-  displayText2: 
+  displayText2: "\u0938\u094D\u0935\u093F\u092E\u093F\u0902\u0917 \u091F\u094D\u092F\u0942\u092C"
 --- !u!1001 &1515510354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12165,6 +12837,7 @@ GameObject:
   - component: {fileID: 1561005209}
   - component: {fileID: 1561005208}
   - component: {fileID: 1561005210}
+  - component: {fileID: 1561005211}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -12278,6 +12951,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1561005209}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1561005211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561005205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1572187176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b964ca40eef274aac205bea04c5947, type: 3}
@@ -12656,6 +13348,7 @@ GameObject:
   - component: {fileID: 1601607153}
   - component: {fileID: 1601607152}
   - component: {fileID: 1601607154}
+  - component: {fileID: 1601607155}
   m_Layer: 0
   m_Name: Playground
   m_TagString: Untagged
@@ -12769,6 +13462,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1601607153}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1601607155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601607149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &1606392180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12873,8 +13585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104.1, y: -97}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 114.7, y: -116.5}
+  m_SizeDelta: {x: 120, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627260680
 MonoBehaviour:
@@ -13010,6 +13722,7 @@ GameObject:
   - component: {fileID: 1627986622}
   - component: {fileID: 1627986621}
   - component: {fileID: 1627986623}
+  - component: {fileID: 1627986624}
   m_Layer: 0
   m_Name: Writing
   m_TagString: Untagged
@@ -13123,6 +13836,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1627986622}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1627986624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627986618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1630397714
 GameObject:
   m_ObjectHideFlags: 0
@@ -13135,6 +13867,7 @@ GameObject:
   - component: {fileID: 1630397718}
   - component: {fileID: 1630397717}
   - component: {fileID: 1630397719}
+  - component: {fileID: 1630397720}
   m_Layer: 0
   m_Name: Sky
   m_TagString: Untagged
@@ -13248,6 +13981,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1630397718}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1630397720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630397714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1630402399
 GameObject:
   m_ObjectHideFlags: 0
@@ -13389,6 +14141,7 @@ MonoBehaviour:
   modelObject: {fileID: 1541906767}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Book
   displayText2: 
@@ -14042,9 +14795,10 @@ MonoBehaviour:
   modelObject: {fileID: 1651702403}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Bed
-  displayText2: 
+  displayText2: "\u0916\u093E\u091F "
 --- !u!1 &1702791931
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,6 +14811,7 @@ GameObject:
   - component: {fileID: 1702791935}
   - component: {fileID: 1702791934}
   - component: {fileID: 1702791936}
+  - component: {fileID: 1702791937}
   m_Layer: 0
   m_Name: Raining
   m_TagString: Untagged
@@ -14171,6 +14926,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1702791935}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1702791937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702791931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1001 &1727380378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14374,9 +15148,10 @@ MonoBehaviour:
   modelObject: {fileID: 668145618}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Elephant
-  displayText2: 
+  displayText2: "\u0939\u093E\u0924\u094D\u0924\u0940"
 --- !u!1 &1746341178
 GameObject:
   m_ObjectHideFlags: 0
@@ -14389,6 +15164,7 @@ GameObject:
   - component: {fileID: 1746341182}
   - component: {fileID: 1746341181}
   - component: {fileID: 1746341183}
+  - component: {fileID: 1746341184}
   m_Layer: 0
   m_Name: Watering
   m_TagString: Untagged
@@ -14502,6 +15278,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1746341182}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1746341184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746341178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &1747343303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bef079e2a22998a4f8e6b23662f5a6b7, type: 3}
@@ -15249,9 +16044,10 @@ MonoBehaviour:
   modelObject: {fileID: 588311935}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Tiger
-  displayText2: 
+  displayText2: "\u092C\u093E\u0918"
 --- !u!1001 &1782223668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15326,6 +16122,7 @@ GameObject:
   - component: {fileID: 1787379365}
   - component: {fileID: 1787379364}
   - component: {fileID: 1787379366}
+  - component: {fileID: 1787379367}
   m_Layer: 0
   m_Name: Travelling
   m_TagString: Untagged
@@ -15439,6 +16236,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1787379365}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1787379367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787379361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!4 &1810548217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9b893b1a48441e438be48d8bbcbc050, type: 3}
@@ -16025,9 +16841,10 @@ MonoBehaviour:
   modelObject: {fileID: 1230372149}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Umbrella
-  displayText2: 
+  displayText2: "\u091B\u093E\u0924\u093E"
 --- !u!1001 &1915580567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16678,9 +17495,10 @@ MonoBehaviour:
   modelObject: {fileID: 205085504}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Car
-  displayText2: 
+  displayText2: "\u092E\u094B\u091F\u0930\u0917\u093E\u0921\u0940"
 --- !u!1001 &2036312144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16773,6 +17591,7 @@ GameObject:
   - component: {fileID: 2041538986}
   - component: {fileID: 2041538985}
   - component: {fileID: 2041538987}
+  - component: {fileID: 2041538988}
   m_Layer: 0
   m_Name: Studying
   m_TagString: Untagged
@@ -16886,6 +17705,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2041538986}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &2041538988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041538982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!1 &2053219006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17023,6 +17861,7 @@ GameObject:
   - component: {fileID: 2081520391}
   - component: {fileID: 2081520390}
   - component: {fileID: 2081520392}
+  - component: {fileID: 2081520393}
   m_Layer: 0
   m_Name: Pool
   m_TagString: Untagged
@@ -17136,6 +17975,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2081520391}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &2081520393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081520387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916a184273ce1aa428b5929502022b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelObject: {fileID: 0}
+  textButton: {fileID: 0}
+  soundButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  displayText: 
+  displayText2: 
 --- !u!4 &2084630325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96b964ca40eef274aac205bea04c5947, type: 3}
@@ -17431,9 +18289,10 @@ MonoBehaviour:
   modelObject: {fileID: 927799568}
   textButton: {fileID: 200533290}
   soundButton: {fileID: 2053219008}
+  closeButton: {fileID: 716166644}
   audioSource: {fileID: 0}
   displayText: Tree
-  displayText2: "\u092C\u093E\u0918"
+  displayText2: "\u0930\u0941\u0916"
 --- !u!4 &2127202062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae33ecbac3970554d9dc361c74ee7cb2, type: 3}

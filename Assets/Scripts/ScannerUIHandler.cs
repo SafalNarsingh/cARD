@@ -11,9 +11,11 @@ public class ScannerUIHandler : MonoBehaviour
     public GameObject modelObject;     // 3D model for this card
     public Button textButton;          // Button showing the label text
     public Button soundButton;         // Button with sound icon
+    public Button closeButton;         // Button to unrender the text and model
     public AudioSource audioSource;    // Plays the sound
     public string displayText;         // e.g., "Dog / Kukur"
     public string displayText2;
+
 
     private ObserverBehaviour observerBehaviour;
 
@@ -70,6 +72,11 @@ public class ScannerUIHandler : MonoBehaviour
             if (audioSource != null)
                 audioSource.Play();
         });
+        closeButton.onClick.RemoveAllListeners();
+        closeButton.onClick.AddListener(() =>
+        {
+            OnTargetLost();
+        });
     }
 
     private void OnTargetLost()
@@ -85,5 +92,6 @@ public class ScannerUIHandler : MonoBehaviour
         if (modelObject) modelObject.SetActive(state);
         if (textButton) textButton.gameObject.SetActive(state);
         if (soundButton) soundButton.gameObject.SetActive(state);
+        if (closeButton) closeButton.gameObject.SetActive(state);
     }
 }
