@@ -19313,7 +19313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 493651238}
         m_TargetAssemblyTypeName: LanguageSwitcher, Assembly-CSharp
         m_MethodName: ToggleLanguage
         m_Mode: 1
