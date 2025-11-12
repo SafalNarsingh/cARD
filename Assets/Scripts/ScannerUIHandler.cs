@@ -12,9 +12,12 @@ public class ScannerUIHandler : MonoBehaviour
     public Button textButton;          // Button showing the label text
     public Button soundButton;         // Button with sound icon
     public Button closeButton;         // Button to unrender the text and model
-    public AudioSource audioSource;    // Plays the sound
+    public AudioSource audioSource1;    // Plays the sound
+    public AudioSource audioSource2;    // Two audio sources to support multiple languages
     public string displayText;         // e.g., "Dog / Kukur"
     public string displayText2;
+
+    private AudioSource audioSource;
 
 
     private ObserverBehaviour observerBehaviour;
@@ -64,6 +67,10 @@ public class ScannerUIHandler : MonoBehaviour
         // Pick appropriate text
         string chosenText = currentLocale == "ne-NP" ? displayText2 : displayText;
         textButton.GetComponentInChildren<TextMeshProUGUI>().text = chosenText;
+
+
+        audioSource = currentLocale == "ne-NP" ? audioSource2 : audioSource1;
+
 
         // Add sound functionality
         soundButton.onClick.RemoveAllListeners();
