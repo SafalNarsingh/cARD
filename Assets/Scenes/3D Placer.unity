@@ -579,91 +579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb53793db68f5843a86d4115be7af22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sections:
-  - sectionName: 
-    models:
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-  - sectionName: 
-    models:
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-  - sectionName: 
-    models:
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-  - sectionName: 
-    models:
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-    - modelPrefab: {fileID: 0}
-      englishName: 
-      nepaliName: 
-  sectionButtons:
-  - {fileID: 1814002795}
-  - {fileID: 2026996569}
-  - {fileID: 1814141897}
-  - {fileID: 512352940}
-  leftButton: {fileID: 1764497670}
-  rightButton: {fileID: 1757338413}
-  unloadButton: {fileID: 314976294}
-  backButton: {fileID: 0}
-  modelNameText: {fileID: 1678858727}
-  sectionCanvas: {fileID: 1744803905}
-  arCanvas: {fileID: 1744803905}
-  placementIndicator: {fileID: 577207263}
-  arTapToPlace: {fileID: 0}
-  currentSectionIndex: -1
-  currentModelIndex: 0
 --- !u!4 &186734548
 Transform:
   m_ObjectHideFlags: 0
@@ -1528,7 +1443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -99.3, y: -106.6}
+  m_AnchoredPosition: {x: -119, y: -165}
   m_SizeDelta: {x: 330, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &385237318
@@ -4831,7 +4746,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280697501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7099,8 +7014,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e25d6befa1c03c49aca141de891e344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 0}
+  raycastManager: {fileID: 2076042374}
+  planeManager: {fileID: 2076042375}
   placementIndicator: {fileID: 577207262}
+  modelPrefab: {fileID: 7589045258087570698, guid: ac0ce3f0c2789fb4e9753870ae805362, type: 3}
+  indicatorRotationSpeed: 50
+  indicatorHoverHeight: 0.01
 --- !u!114 &2076042377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7287,7 +7206,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 470388033}
   - {fileID: 2103675091}
-  - {fileID: 1280697505}
   - {fileID: 1906042375}
   - {fileID: 186734548}
   - {fileID: 2101282256}
@@ -7295,3 +7213,4 @@ SceneRoots:
   - {fileID: 577207263}
   - {fileID: 1744803909}
   - {fileID: 1362302555}
+  - {fileID: 1280697505}

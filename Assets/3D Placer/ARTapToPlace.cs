@@ -1,118 +1,182 @@
 ﻿using System.Collections.Generic;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class ARTapToPlaceObject : MonoBehaviour
+[RequireComponent(typeof(ARRaycastManager))]
+public class ARModelPlacement : MonoBehaviour
 {
-    [Header("AR Placement References")]
-    public GameObject objectToPlace;
-    public GameObject placementIndicator;
+    [Header("AR Components")]
+    [SerializeField] private ARRaycastManager raycastManager;
+    [SerializeField] private ARPlaneManager planeManager;
 
-    private XROrigin arOrigin;
-    private ARRaycastManager raycastManager;
+    [Header("Placement Settings")]
+    [SerializeField] private GameObject placementIndicator;
+    [SerializeField] private GameObject modelPrefab;
 
+    [Header("Indicator Settings")]
+    [SerializeField] private float indicatorRotationSpeed = 50f;
+    [SerializeField] private float indicatorHoverHeight = 0.01f;
+
+    private List<ARRaycastHit> hits = new List<ARRaycastHit>();
     private Pose placementPose;
     private bool placementPoseIsValid = false;
-    private GameObject spawnedObject;
+    private Camera arCamera;
+    private GameObject spawnedModel;
+    private bool modelPlaced = false;
+
+    void Awake()
+    {
+        // Get AR components
+        if (raycastManager == null)
+            raycastManager = GetComponent<ARRaycastManager>();
+
+        if (planeManager == null)
+            planeManager = GetComponent<ARPlaneManager>();
+
+        arCamera = Camera.main;
+    }
 
     void Start()
     {
-        // ✅ Updated object finder API
-        arOrigin = Object.FindFirstObjectByType<XROrigin>();
-        raycastManager = Object.FindFirstObjectByType<ARRaycastManager>();
-
+        // Ensure placement indicator is initially hidden
         if (placementIndicator != null)
-        {
             placementIndicator.SetActive(false);
 
-            // Ensure placement indicator has a collider
-            if (placementIndicator.GetComponent<Collider>() == null)
-            {
-                var collider = placementIndicator.AddComponent<BoxCollider>();
-                collider.isTrigger = true;
-            }
-        }
+        // Validate required components
+        if (modelPrefab == null)
+            Debug.LogError("Model Prefab is not assigned!");
+
+        if (placementIndicator == null)
+            Debug.LogError("Placement Indicator is not assigned!");
     }
 
     void Update()
     {
-        UpdatePlacementPose();
-        UpdatePlacementIndicator();
-
-        if (placementPoseIsValid)
+        // Only update placement pose if model hasn't been placed yet
+        if (!modelPlaced)
         {
-            HandleTouchInput();
+            UpdatePlacementPose();
+            UpdatePlacementIndicator();
         }
-    }
 
-    private void HandleTouchInput()
-    {
-        if (Input.touchCount == 0) return;
-
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase != TouchPhase.Began) return;
-
-        // Raycast from touch to detect if indicator was tapped
-        Ray ray = Camera.main.ScreenPointToRay(touch.position);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
+        // Handle touch input for model placement
+        if (placementPoseIsValid && Input.touchCount > 0 && !modelPlaced)
         {
-            if (hit.transform == placementIndicator.transform)
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
             {
-                PlaceObject();
+                PlaceModel();
             }
         }
+
+        // Optional: Also support mouse click for Unity Editor testing
+#if UNITY_EDITOR
+        if (placementPoseIsValid && Input.GetMouseButtonDown(0) && !modelPlaced)
+        {
+            PlaceModel();
+        }
+#endif
     }
 
-    private void PlaceObject()
+    private void UpdatePlacementPose()
     {
-        if (objectToPlace == null || !placementPoseIsValid) return;
+        // Get the center of the screen
+        Vector3 screenCenter = arCamera.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0));
 
-        if (spawnedObject == null)
+        // Perform raycast from screen center
+        if (raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
         {
-            spawnedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+            placementPoseIsValid = true;
+            placementPose = hits[0].pose;
+
+            // Adjust the pose to align with camera direction (optional)
+            Vector3 cameraForward = arCamera.transform.forward;
+            Vector3 cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+            placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
         else
         {
-            spawnedObject.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+            placementPoseIsValid = false;
         }
     }
 
     private void UpdatePlacementIndicator()
     {
-        if (placementIndicator == null) return;
+        if (placementIndicator == null)
+            return;
 
         if (placementPoseIsValid)
         {
+            // Show and position the indicator
             placementIndicator.SetActive(true);
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+
+            // Add slight hover effect
+            Vector3 indicatorPosition = placementPose.position;
+            indicatorPosition.y += indicatorHoverHeight;
+            placementIndicator.transform.position = indicatorPosition;
+
+            placementIndicator.transform.rotation = placementPose.rotation;
+
+            // Optional: Add rotation animation to indicator
+            placementIndicator.transform.Rotate(Vector3.up, indicatorRotationSpeed * Time.deltaTime);
         }
         else
         {
+            // Hide indicator if no valid surface
             placementIndicator.SetActive(false);
         }
     }
 
-    private void UpdatePlacementPose()
+    private void PlaceModel()
     {
-        var screenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
-        var hits = new List<ARRaycastHit>();
+        if (modelPrefab == null || !placementPoseIsValid)
+            return;
 
-        if (raycastManager != null)
-            placementPoseIsValid = raycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
-        else
-            placementPoseIsValid = false;
+        // Instantiate the model at the placement pose
+        spawnedModel = Instantiate(modelPrefab, placementPose.position, placementPose.rotation);
 
-        if (placementPoseIsValid && hits.Count > 0)
+        // Hide the placement indicator
+        if (placementIndicator != null)
+            placementIndicator.SetActive(false);
+
+        // Mark model as placed
+        modelPlaced = true;
+
+        // Optional: Disable plane detection after placement to save resources
+        if (planeManager != null)
+            planeManager.enabled = false;
+
+        Debug.Log("Model placed successfully!");
+    }
+
+    // Public method to reset placement (useful for UI button)
+    public void ResetPlacement()
+    {
+        if (spawnedModel != null)
         {
-            placementPose = hits[0].pose;
-
-            var cameraForward = Camera.main.transform.forward;
-            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-            placementPose.rotation = Quaternion.LookRotation(cameraBearing);
+            Destroy(spawnedModel);
+            spawnedModel = null;
         }
+
+        modelPlaced = false;
+
+        // Re-enable plane detection
+        if (planeManager != null)
+            planeManager.enabled = true;
+
+        // Show indicator again
+        if (placementIndicator != null)
+            placementIndicator.SetActive(true);
+    }
+
+    // Optional: Method to place multiple models
+    public void EnableMultiplePlacements()
+    {
+        modelPlaced = false;
+
+        if (placementIndicator != null)
+            placementIndicator.SetActive(true);
     }
 }
