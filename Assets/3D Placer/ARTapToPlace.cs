@@ -1,182 +1,202 @@
 ﻿using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.Localization.Settings;
 
 [RequireComponent(typeof(ARRaycastManager))]
-public class ARModelPlacement : MonoBehaviour
+public class ARTapToPlace : MonoBehaviour
 {
-    [Header("AR Components")]
-    [SerializeField] private ARRaycastManager raycastManager;
-    [SerializeField] private ARPlaneManager planeManager;
+    [SerializeField] GameObject placementIndicator;
+    [SerializeField] GameObject placedPrefab;
 
-    [Header("Placement Settings")]
-    [SerializeField] private GameObject placementIndicator;
-    [SerializeField] private GameObject modelPrefab;
+    [Header("Localization Text")]
+    public string englishText;
+    public string nepaliText;
 
-    [Header("Indicator Settings")]
-    [SerializeField] private float indicatorRotationSpeed = 50f;
-    [SerializeField] private float indicatorHoverHeight = 0.01f;
+    [Header("Localization Audio")]
+    public AudioClip englishAudio;
+    public AudioClip nepaliAudio;
 
-    private List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    private Pose placementPose;
-    private bool placementPoseIsValid = false;
-    private Camera arCamera;
-    private GameObject spawnedModel;
-    private bool modelPlaced = false;
+    [Header("UI References")]
+    public Button infoButton;
+    public Button soundButton;
+    public AudioSource audioSource;
 
-    void Awake()
+    // ------------------ NEW: Real-time locale support ------------------
+    private string _currentLocale;
+    public string CurrentLocale
     {
-        // Get AR components
-        if (raycastManager == null)
-            raycastManager = GetComponent<ARRaycastManager>();
-
-        if (planeManager == null)
-            planeManager = GetComponent<ARPlaneManager>();
-
-        arCamera = Camera.main;
-    }
-
-    void Start()
-    {
-        // Ensure placement indicator is initially hidden
-        if (placementIndicator != null)
-            placementIndicator.SetActive(false);
-
-        // Validate required components
-        if (modelPrefab == null)
-            Debug.LogError("Model Prefab is not assigned!");
-
-        if (placementIndicator == null)
-            Debug.LogError("Placement Indicator is not assigned!");
-    }
-
-    void Update()
-    {
-        // Only update placement pose if model hasn't been placed yet
-        if (!modelPlaced)
+        get => _currentLocale;
+        private set
         {
-            UpdatePlacementPose();
-            UpdatePlacementIndicator();
-        }
-
-        // Handle touch input for model placement
-        if (placementPoseIsValid && Input.touchCount > 0 && !modelPlaced)
-        {
-            Touch touch = Input.GetTouch(0);
-
-            if (touch.phase == TouchPhase.Began)
+            if (_currentLocale != value)
             {
-                PlaceModel();
+                _currentLocale = value;
+                UpdateLocalizedUI();
             }
         }
+    }
+    // -------------------------------------------------------------------
 
-        // Optional: Also support mouse click for Unity Editor testing
-#if UNITY_EDITOR
-        if (placementPoseIsValid && Input.GetMouseButtonDown(0) && !modelPlaced)
+    GameObject spawnedObject;
+    TouchInput controls;
+
+    private ARRaycastManager aRRaycastManager;
+    private XROrigin arOrigin;
+    private Camera arCamera;
+
+    private Pose placementPose;
+    private bool placementPoseIsValid = false;
+    private List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+    private void Awake()
+    {
+        aRRaycastManager = GetComponent<ARRaycastManager>();
+        arOrigin = GetComponent<XROrigin>();
+        arCamera = arOrigin != null ? arOrigin.Camera : Camera.main;
+
+        // Detect current locale at startup
+        CurrentLocale = LocalizationSettings.SelectedLocale?.Identifier.Code ?? "en";
+
+        controls = new TouchInput();
+        controls.control.touch.performed += ctx =>
         {
-            PlaceModel();
-        }
-#endif
+            if (ctx.control.device is Pointer device)
+            {
+                OnPress(device.position.ReadValue());
+            }
+        };
+
+        placementIndicator?.SetActive(false);
+
+        if (infoButton != null) infoButton.gameObject.SetActive(false);
+        if (soundButton != null) soundButton.gameObject.SetActive(false);
     }
 
-    private void UpdatePlacementPose()
+    private void OnEnable()
     {
-        // Get the center of the screen
-        Vector3 screenCenter = arCamera.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0));
+        controls.control.Enable();
+    }
 
-        // Perform raycast from screen center
-        if (raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
+    private void OnDisable()
+    {
+        controls.control.Disable();
+    }
+
+    private void Update()
+    {
+        UpdatePlacementIndicator();
+
+        // Detect if locale changed in real-time
+        string localeCode = LocalizationSettings.SelectedLocale?.Identifier.Code ?? "en";
+        if (localeCode != CurrentLocale)
         {
-            placementPoseIsValid = true;
-            placementPose = hits[0].pose;
+            CurrentLocale = localeCode;
+        }
+    }
 
-            // Adjust the pose to align with camera direction (optional)
-            Vector3 cameraForward = arCamera.transform.forward;
-            Vector3 cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-            placementPose.rotation = Quaternion.LookRotation(cameraBearing);
+    void OnPress(Vector3 position)
+    {
+        if (aRRaycastManager.Raycast(position, hits, TrackableType.PlaneWithinPolygon))
+        {
+            var hitPose = hits[0].pose;
+
+            spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+            Debug.Log($"✅ Object placed at: {hitPose.position}");
+
+            if (arCamera != null)
+            {
+                Vector3 lookPos = arCamera.transform.position - spawnedObject.transform.position;
+                lookPos.y = 0;
+                spawnedObject.transform.rotation = Quaternion.LookRotation(lookPos);
+            }
+
+            ShowLocalizedUI();
         }
         else
         {
-            placementPoseIsValid = false;
+            Debug.LogWarning("No valid plane detected!");
+        }
+    }
+
+    void ShowLocalizedUI()
+    {
+        if (infoButton != null)
+        {
+            infoButton.gameObject.SetActive(true);
+
+            string finalText = CurrentLocale == "en" ? englishText : nepaliText;
+            infoButton.GetComponentInChildren<Text>().text = finalText;
+        }
+
+        if (soundButton != null)
+        {
+            soundButton.gameObject.SetActive(true);
+
+            soundButton.onClick.RemoveAllListeners();
+            soundButton.onClick.AddListener(() =>
+            {
+                PlayLocalizedAudio();
+            });
+        }
+    }
+
+    void UpdateLocalizedUI()
+    {
+        if (infoButton != null)
+        {
+            string finalText = CurrentLocale == "en" ? englishText : nepaliText;
+            infoButton.GetComponentInChildren<Text>().text = finalText;
+        }
+    }
+
+    void PlayLocalizedAudio()
+    {
+        if (audioSource == null) return;
+
+        AudioClip clipToPlay = CurrentLocale == "en" ? englishAudio : nepaliAudio;
+
+        if (clipToPlay != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(clipToPlay);
+        }
+        else
+        {
+            Debug.LogWarning("No audio assigned for this locale!");
         }
     }
 
     private void UpdatePlacementIndicator()
     {
-        if (placementIndicator == null)
-            return;
+        if (placementIndicator == null) return;
 
-        if (placementPoseIsValid)
+        Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+        hits.Clear();
+
+        if (aRRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
         {
-            // Show and position the indicator
+            placementPoseIsValid = true;
+            placementPose = hits[0].pose;
+
+            if (arCamera != null)
+            {
+                Vector3 cameraForward = arCamera.transform.forward;
+                Vector3 cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+                placementPose.rotation = Quaternion.LookRotation(cameraBearing);
+            }
+
             placementIndicator.SetActive(true);
-
-            // Add slight hover effect
-            Vector3 indicatorPosition = placementPose.position;
-            indicatorPosition.y += indicatorHoverHeight;
-            placementIndicator.transform.position = indicatorPosition;
-
-            placementIndicator.transform.rotation = placementPose.rotation;
-
-            // Optional: Add rotation animation to indicator
-            placementIndicator.transform.Rotate(Vector3.up, indicatorRotationSpeed * Time.deltaTime);
+            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
-            // Hide indicator if no valid surface
+            placementPoseIsValid = false;
             placementIndicator.SetActive(false);
         }
-    }
-
-    private void PlaceModel()
-    {
-        if (modelPrefab == null || !placementPoseIsValid)
-            return;
-
-        // Instantiate the model at the placement pose
-        spawnedModel = Instantiate(modelPrefab, placementPose.position, placementPose.rotation);
-
-        // Hide the placement indicator
-        if (placementIndicator != null)
-            placementIndicator.SetActive(false);
-
-        // Mark model as placed
-        modelPlaced = true;
-
-        // Optional: Disable plane detection after placement to save resources
-        if (planeManager != null)
-            planeManager.enabled = false;
-
-        Debug.Log("Model placed successfully!");
-    }
-
-    // Public method to reset placement (useful for UI button)
-    public void ResetPlacement()
-    {
-        if (spawnedModel != null)
-        {
-            Destroy(spawnedModel);
-            spawnedModel = null;
-        }
-
-        modelPlaced = false;
-
-        // Re-enable plane detection
-        if (planeManager != null)
-            planeManager.enabled = true;
-
-        // Show indicator again
-        if (placementIndicator != null)
-            placementIndicator.SetActive(true);
-    }
-
-    // Optional: Method to place multiple models
-    public void EnableMultiplePlacements()
-    {
-        modelPlaced = false;
-
-        if (placementIndicator != null)
-            placementIndicator.SetActive(true);
     }
 }
